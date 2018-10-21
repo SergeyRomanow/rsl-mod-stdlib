@@ -1,0 +1,56 @@
+{
+    "name":         "rsl-framework/rsl-database",
+    "description":  "This is the DataBase Component for RSL Framework.",
+    "type":         "library",  
+  
+  "homepage":     "http://framework.MyRomanow.ru/rsl",
+  
+  
+  "license":      "BSD-3-Clause",
+  "keywords":     ["romanow", "framework", "rsl", "component", "database"],
+
+  "autoload": {
+    "psr-4": {
+      "RSL\\DataBase\\": ""
+    }
+  },
+
+  "require": {
+    "php" : "^5.6 || ^7.0",
+    "rsl-framework/rsl-stdlib": "self.version",
+    "ext-pdo": "*"
+  },
+
+  "require-dev": {
+    "rsl-framework/rsl-manager-event": "self.version",
+    "rsl-framework/rsl-manager-service": "self.version",
+    "rsl-framework/rsl-stdlib": "self.version"
+  },
+
+  "suggest": {
+    "rsl-framework/rsl-manager-event": "RSL\\ManagerEvent component",
+    "rsl-framework/rsl-manager-service": "RSL\\ManagerService component"
+  },
+
+  "support": {
+    "issues": "https://github.com/romanow/framework/issues?state=open",
+    "forum":  "http://www.romanow.ru/forum/",
+    "wiki":   "http://www.romanow.ru/wiki/",
+    "irc":    "irc://irc.freenode.net/romanow/framework",
+    "source": "https://github.com/romanow/famework/rsl"
+  },
+
+  "authors": [
+    {
+      "name":     "Sergey L Romanow",
+      "email":    "sergey.l.romanow@gmail.com",
+	  "homepage": "http://www.MyRomanow.ru",
+      "role":     "Founder and project lead"
+    }
+  ],
+  "target-dir": "rsl/resources",
+  "config": {
+    "vendor-dir": "Libs/Vendor"
+  },
+
+}
